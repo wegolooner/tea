@@ -1,0 +1,16 @@
+/* Ensure container has margin for left and right */
+.product-container {
+    margin: 0 auto;
+    max-width: 1440px; /* Matches the width requirement */
+    padding: 0 20px; /* Add spacing on left and right */
+  }
+  
+  /* Center align product cards and ensure proper spacing */
+  .row {
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .col-md-6.col-lg-4 {
+    display: flex;
+    justify-content: center; /* Align cards evenly within their column */
+  }

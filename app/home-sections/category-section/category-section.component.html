@@ -1,0 +1,21 @@
+<div class="category-section my-5">
+    <h2 class="text-center">{{ title }}</h2>
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 mb-4" *ngFor="let product of products">
+        <div class="card">
+          <!-- Image Section -->
+          <div class="card-image">
+            <img [src]="product.image" class="card-img" alt="{{ product.name }}">
+          </div>
+          <!-- Body Section -->
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="#" class="d-block mt-3 text-secondary"><< SEE MORE >></a>
+    </div>
+  </div>
+  

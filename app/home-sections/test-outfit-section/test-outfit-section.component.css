@@ -1,0 +1,39 @@
+.test-outfit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all elements */
+    justify-content: center; /* Center elements vertically */
+    height: 100vh; /* Full height section */
+    background-color: #f8f9fa; /* Optional background */
+  }
+  
+  .test-outfit-title {
+    font-size: 52px; /* Large font size */
+    font-weight: 600; /* Semi-bold */
+    color: #ff3e3e; /* Primary text color */
+    -webkit-text-stroke: 1px #ff5454; /* Stroke effect */
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px; /* Spacing below the title */
+  }
+  
+  .test-outfit-link {
+    font-size: 20px; /* Link text size */
+    color: black; /* Black text color */
+    font-weight: bold; /* Make it stand out */
+    margin-bottom: 30px; /* Spacing below the link */
+    transition: color 0.2s; /* Smooth hover effect */
+  }
+  
+  .test-outfit-link:hover {
+    color: #ff3e3e; /* Change color on hover */
+  }
+  
+  .test-outfit-box {
+    width: 856px; /* Box width */
+    height: 440px; /* Box height */
+    background-color: white; /* White fill */
+    border: 2px solid #ffa2a2; /* Border with specified color */
+    border-radius: 12px; /* Rounded corners */
+  }
+  

@@ -1,0 +1,14 @@
+.slogan-container {
+    background-color: #000; /* Match header background color */
+    color: #fff; /* Set text color for contrast */
+    text-align: center;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  
+  .slogan-text {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 5px 0; /* Optional: Adjust padding as needed */
+  }
+  

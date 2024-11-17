@@ -1,0 +1,26 @@
+<div class="container-fluid p-0">
+    <app-slogan-container></app-slogan-container>
+    <p align="center">Chỗ này là header</p>
+<app-banner-section></app-banner-section>
+<app-category-section
+  [title]="'OUR BEST COLLECTIONS'"
+  [products]="bestCollections">
+</app-category-section>
+
+<app-category-section
+  [title]="'LUXURY PRODUCTS'"
+  [products]="luxuryProducts">
+</app-category-section>
+
+<app-category-section
+  [title]="'FASHIONABLE ACCESSORIES'"
+  [products]="fashionableAccessories">
+</app-category-section>
+
+<app-category-section
+  [title]="'BEST FOR YOUR FEET'"
+  [products]="bestForYourFeet">
+</app-category-section>
+
+<app-test-outfit-section></app-test-outfit-section>
+<div class="bg-dark p-3 text-light text-center">Chỗ này là footer</div>

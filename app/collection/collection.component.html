@@ -1,0 +1,39 @@
+<div class="container-fluid p-0">
+  <app-slogan-container></app-slogan-container>
+  <p align="center">Chỗ này là header</p>
+  <div class="collection-container my-5">
+    <h2 class="text-center">SUMMER COLLECTION</h2>
+    <p class="text-center">Make the summer cooler</p>
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <!-- Image Section -->
+          <!-- <div class="card-image"> -->
+          <div class="filler"></div>
+          <!-- <img [src]="product.image" class="card-img" alt="{{ product.name }}"> -->
+        <!-- Body Section -->
+        <div class="card-body">
+          <h5 class="card-title text-center">Sneaker</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="other-collections-title text-center mt-5">OTHER COLLECTIONS</h2>
+</div>
+<div class="other-collections row justify-content-center">
+  <div
+    *ngFor="let other of otherCollections"
+    class="col-lg-4 col-md-4 col-sm-6 mb-4"
+    (click)="viewCollection(other.id)"
+  >
+    <div class="card">
+      <div class="card-body text-center">
+        <!-- <img [src]="item.image" class="card-img-top" alt="{{ item.name }}"> -->
+        <div class="filler"></div>
+        <h5 class="card-title">{{ other.name }}</h5>
+        <p class="card-text">{{ other.slogan }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-dark p-3 text-light text-center">Chỗ này là footer</div>

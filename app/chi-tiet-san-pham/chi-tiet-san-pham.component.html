@@ -1,0 +1,105 @@
+<app-slogan-container></app-slogan-container>
+<p align="center">Chỗ này là header</p>
+
+<div class="chi-tiet-san-pham-page">
+    <!-- Main Container with Slider and React Containers -->
+    <div class="product-details-container">
+      <!-- Slider Container -->
+      <div class="slider-container">
+        <div class="thumbnail-column">
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"></div>
+        </div>
+        <div class="main-image"></div>
+      </div>
+  
+      <!-- React Container -->
+      <div class="react-container">
+        <!-- Product Header with Name and Heart Icon -->
+        <div class="product-header">
+          <h1 class="product-name">Product Name</h1>
+          <button aria-label="add-to-favorites" class="add-to-favorites" (click)="toggleFavorite()">
+            <i [ngClass]="isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart'"></i>
+          </button>
+        </div>
+  
+        <!-- Product Code and Stock Status -->
+        <div class="product-info">
+          <span class="product-code">Product Code: Ao000531</span>
+          <span class="stock-status">In stock</span>
+        </div>
+  
+        <!-- Product Prices -->
+        <p class="product-price">
+          <span class="discounted-price">155.000 vnd</span>
+          <span class="original-price">355.000 vnd</span>
+        </p>
+  
+        <!-- Color Selection -->
+        <div class="color-size-text">Color & Size</div>
+        <div class="color-section">
+            <div
+              *ngFor="let color of colors; index as i"
+              class="color-option"
+              [class.active]="i === activeColorIndex"
+              (click)="selectColor(i)"
+            >
+              <div class="color-name">{{ color }}</div>
+            </div>
+          </div>
+  
+        <!-- Size Selection -->
+        <div class="size-section">
+            <div class="sizes">
+              <div
+                *ngFor="let size of sizes; index as i"
+                class="size"
+                [class.active]="i === activeSizeIndex"
+                (click)="selectSize(i)"
+              >
+                {{ size }}
+              </div>
+            </div>
+          </div>
+  
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="buy-now">Buy Now</button>
+          <button class="add-to-favorite-list">Add to Favorite List</button>
+        </div>
+        <button class="test-outfit">Test outfit</button>
+  
+        <!-- Additional Info -->
+        <div class="additional-info">
+          <div class="backstory">
+            Backstory <a href="#" class="see-more">See more</a>
+          </div>
+          <div class="tags">
+            Tags <a href="#" class="tag">#shirt</a> <a href="#" class="tag">#casual</a>
+          </div>
+        </div>
+  
+        <!-- Product Care and Product Detail -->
+        <div class="dropdowns">
+          <div class="dropdown-item">
+            Product Care <i class="bi bi-caret-right"></i>
+          </div>
+          <div class="dropdown-item">
+            Product Detail <i class="bi bi-caret-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Usually Bought With Container -->
+    <div class="usually-bought-with-container">
+      <h2>Usually bought with</h2>
+      <div class="related-products">
+        <app-product-detailed *ngFor="let product of relatedProducts"></app-product-detailed>
+      </div>
+    </div>
+  </div>
+  

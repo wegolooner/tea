@@ -1,0 +1,301 @@
+.chi-tiet-san-pham-page { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Montserrat';
+}
+
+.product-details-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center-align horizontally */
+    align-items: flex-start; /* Align items at the top for visual balance */
+    gap: 40px;
+    width: 100%;
+}
+
+/* React and Slider Container */
+.slider-container, .react-container {
+    display: flex;
+    width: 50%; /* Equal width for both containers */
+    max-width: 600px; /* Optional: Cap maximum width */
+}
+
+/* Slider Container */
+.slider-container {
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 140px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+}
+
+.main-image {
+    width: 540px;
+    height: 920px;
+    background-color: #D9D9D9;
+}
+
+/* React Container */
+.react-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product Header with Name and Heart Icon */
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name {
+    font-family: 'Bona Nova', serif;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add spacing */
+}
+
+.add-to-favorites {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+    font-size: 24px;
+    color: red;
+}
+
+/* Product Info with Code and Stock Status */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: black; /* Product code in black */
+    margin-bottom: 12px; /* Add spacing */
+}
+
+.stock-status {
+    color: gray
+}
+/* Product Prices */
+.product-price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing */
+}
+
+.discounted-price {
+    font-size: 20px;
+    font-weight: 700; /* Montserrat SemiBold */
+}
+
+.original-price {
+    font-size: 16px;
+    color: #CCCCCC; /* Original price color */
+    text-decoration: line-through;
+    font-weight: 600; /* Montserrat SemiBold */
+    margin-left: 30px
+}
+
+/* Color and Size Section */
+.color-section {
+    display: flex;
+    gap: 27px;
+    margin: 15px 0;
+}
+
+.color-size-text {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.color-option {
+    width: 80px;
+    height: 96px;
+    background-color: #D9D9D9;
+    position: relative; /* To position child elements */
+    /* display: flex; */
+    /* justify-content: center; */
+    
+    /* z-index: 0; Default stacking context */
+    /* border: 1px solid transparent; Ensure no visible border unless active */
+}
+.color-option.active {
+    box-sizing: content-box;
+    border: 1px solid red; /* Red border for the selected option */
+    /* z-index: 1; Elevate the container to show the border above child elements */
+}
+.color-option .color-name {
+    width: 80px;
+    height: 16px;
+    background-color: rgba(51, 51, 51, 0.9); /* #333 with 90% opacity */
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px; /* Center text vertically */
+    position: absolute;
+    bottom: 0; /* Align at the bottom of the container */
+    left: 0;
+    /* z-index: -1; Keep text box beneath the border */
+}
+
+/* Size Selection */
+.size-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.sizes {
+    display: flex;
+    gap: 27px; /* Space between size options */
+}
+
+.size {
+    width: 60px;
+    height: 35px;
+    border-radius: 30px; /* Rounded corners */
+    background-color: white;
+    border: 1px solid #333; /* Add a border for visibility */
+    text-align: center;
+    line-height: 30px; /* Center text vertically */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.size-guide {
+    color: black !important; /* Always black */
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buy-now, .add-to-favorite-list, .test-outfit {
+    height: 60px; /* Uniform height */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Shadow */
+    cursor: pointer;
+}
+
+.buy-now {
+    flex: 1;
+    background-color: black; /* Black fill */
+    color: white;
+    padding: 10px 0;
+    border: none;
+}
+
+.add-to-favorite-list {
+    flex: 1;
+    background-color: white;
+    color: #333;
+    padding: 10px 0;
+    border: 1px solid #333;
+    border-left: none;
+}
+
+.test-outfit {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Additional Info */
+.additional-info {
+    margin-top: 20px;
+}
+
+.backstory, .tags {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.see-more, .tag {
+    color: #CCCCCC; /* Light gray */
+    text-decoration: underline;
+}
+
+.dropdowns {
+    margin-top: 20px;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: calc(100% - 50px); /* Leave 30px space on the right */
+    border-top: 1px solid #333; /* Optional: Keep only a top border */
+    border-bottom: 1px solid #333; /* Optional: Keep only a bottom border */
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: white; /* Optional background */
+}
+
+.dropdown-item i {
+    margin-left: auto; /* Align the icon to the right */
+}
+
+/* Usually Bought With Container */
+.usually-bought-with-container {
+    width: 100%;
+    max-width: 1140px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.usually-bought-with-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.related-products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .slider-container, .react-container {
+        width: 100%; /* Full width when stacked */
+    }
+}
+
+/* Active State for Color Options */
+  
+  /* Active State for Size Options */
+  .size.active {
+    border: 1px solid red;
+  }
+  
+  /* Active State for Heart Icon */
+  .add-to-favorites.active .bi-heart{
+    background-color: red;
+  }

@@ -1,0 +1,28 @@
+.banner-section {
+    /* background: url('../../../assets/rocky-top.png') no-repeat center center/cover; */
+    position: relative;
+    height: 80vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  }
+  
+  .banner-rectangle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 160px;
+    background-color: #76c1ff; /* Blue fill */
+    border-radius: 39px; /* Rounded corners */
+    display: flex;
+    flex-direction: column; /* Arrange icons in a column */
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 28px; /* Adjust icon size */
+    color: black; /* Make icons stand out */
+  }
